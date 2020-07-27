@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_legacy_loja_virtual/view/layout.dart';
+import 'package:flutter_legacy_loja_virtual/view/home/roullete_category.dart';
 
 class HomePage extends StatelessWidget {
   static String tag = 'home-page';
@@ -49,6 +50,10 @@ class HomePage extends StatelessWidget {
         ),
         Container(
           height: 90,
+          child: SingleChildScrollView(
+            physics: NeverScrollableScrollPhysics(),
+            child: RoulleteCategory(),
+          ),
         ),
       ],
     );

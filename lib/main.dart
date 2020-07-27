@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_legacy_loja_virtual/view/home_page.dart';
+import 'package:flutter_legacy_loja_virtual/view/home/home_page.dart';
 
 void main() => runApp(MyApp());
 
