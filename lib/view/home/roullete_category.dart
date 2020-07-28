@@ -16,7 +16,7 @@ class _RoulleteCategoryState extends State<RoulleteCategory>
     _animationController = AnimationController(
       vsync: this,
       duration: Duration(
-        milliseconds: 1000,
+        milliseconds: 300,
       ),
     );
   }
@@ -72,6 +72,26 @@ class _RoulleteCategoryState extends State<RoulleteCategory>
                     child: Image.asset(
                       'assets/images/bg-catwheel.png',
                       fit: BoxFit.cover,
+                    ),
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: MediaQuery.of(context).size.width,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                    child: Column(
+                      children: <Widget>[
+                        Padding(
+                          padding: EdgeInsets.only(top: 20),
+                          child: Icon(
+                            Icons.wb_sunny,
+                            color: Layout.light(),
+                            size: 32,
+                          ),
+                        ),
+                        Text('Estilo', style: Theme.of(context).textTheme.subtitle1.copyWith(color: Layout.light(),)),
+                      ],
                     ),
                   ),
                 ],
